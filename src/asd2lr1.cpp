@@ -76,14 +76,25 @@ int asd2Lr1Main()
     return 0;
 }
 
-/*MyTest::MyTest(int cnt, int mxmr, bool cht) {
-    count = cnt;
-    maxMark = mxmr;
-    isCheating = cht;
-}*/
-
 //------------- DynamicTestArray---------------------------------------------------------------------------------------------------------
+int DynamicTestArray::push_front(MyTest test) {
+    //додавання елементу в початок
+    if (size == capacity) {
+        cout << "size == capacity" << endl;
+        int isGrow = growCapacity();
+        if (!isGrow) {
+            return 0;
+        }
+    }
 
+    for(int i = size; i > 0; i--) {
+        tests[i] = tests[i-1];
+    }
+
+    tests[0] = test;
+    size++;
+    return 1;
+}
 int DynamicTestArray::push_back(MyTest test) {
     //додавання елементу в кінець
     if (size == capacity) {
@@ -97,6 +108,21 @@ int DynamicTestArray::push_back(MyTest test) {
     tests[size++] = test;
     return 1;
 };
+
+MyTest DynamicTestArray::pop_front() {
+    //зчитування та видалення елементу з початку
+    if (size == 0) {
+        cout << "size = 0" << endl;
+    }
+
+    //MyTest test(tests[0].count, tests[0].maxMark, tests[0].isCheating);
+    MyTest test = tests[0];
+    for(int i = 1; i < size; i++) {
+        tests[i-1] = tests[i];
+    }
+    tests[--size] = {};
+    return test;
+}
 
 MyTest DynamicTestArray::pop_back() {
     //зчитування та видалення елементу з кінця
@@ -132,39 +158,6 @@ void DynamicTestArray::print() {
         cout << i + 1 << ")";
         tests[i].print();
     }
-}
-
-int DynamicTestArray::push_front(MyTest test) {
-    //додавання елементу в початок
-    if (size == capacity) {
-        cout << "size == capacity" << endl;
-        int isGrow = growCapacity();
-        if (!isGrow) {
-            return 0;
-        }
-    }
-
-    for(int i = size; i > 0; i--) {
-        tests[i] = tests[i-1];
-    }
-
-    tests[0] = test;
-    size++;
-    return 1;
-}
-
-MyTest DynamicTestArray::pop_front() {
-    //зчитування та видалення елементу з початку
-    if (size == 0) {
-        cout << "size = 0" << endl;
-    }
-
-    MyTest test(tests[0].count, tests[0].maxMark, tests[0].isCheating);
-    for(int i = 1; i < size; i++) {
-        tests[i-1] = tests[i];
-    }
-    tests[--size] = {};
-    return test;
 }
 
 int DynamicTestArray::growCapacity() {

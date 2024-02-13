@@ -43,20 +43,13 @@ struct DynamicTestArray {
         tests = (MyTest*) malloc(DEFAULT_CAPACITY * sizeof(MyTest));
     }
 
-    int push_back(MyTest test); //додаванн€ елементу в к≥нець
-
+    int push_back(MyTest test); //додаванн€ елементу в
     MyTest pop_back(); //зчитуванн€ та видаленн€ елементу з к≥нц€
-
     MyTest get(int n); //зчитуванн€ n-го елементу
-
     int sizeElement(); //знаходженн€ к≥лькост≥ елемент≥в
-
     void print();//виведенн€ вс≥х елемент≥в з даними, що збер≥гаютьс€
-
     int push_front(MyTest test); //додаванн€ елементу в початок
-
     MyTest pop_front(); //зчитуванн€ та видаленн€ елементу з початку
-
     int growCapacity();
 };
 
