@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1707578981 source:d:\projects_c\testcpp\main.cpp
+1708204124 source:d:\projects_c\testcpp\main.cpp
 	<iostream>
 	<stdio.h>
 	<string>
@@ -9,45 +9,56 @@
 	<fibonachy.h>
 	<pointertest.h>
 	<queueexample.h>
+	<inputexample.h>
 	<asd2lr1.h>
 
-1707678165 source:d:\projects_c\testcpp\src\structexample.cpp
+1707940333 source:d:\projects_c\testcpp\src\structexample.cpp
 	<iostream>
 	<structexample.h>
 
-1707678485 d:\projects_c\testcpp\include\structexample.h
+1707925966 d:\projects_c\testcpp\include\structexample.h
 
-1707499088 d:\projects_c\testcpp\include\fibonachy.h
+1707925959 d:\projects_c\testcpp\include\fibonachy.h
 
-1707499087 source:d:\projects_c\testcpp\src\fibonachy.cpp
+1707925957 source:d:\projects_c\testcpp\src\fibonachy.cpp
 	<iostream>
 	<stdio.h>
 	<string>
 	<math.h>
 	<fibonachy.h>
 
-1707499087 source:d:\projects_c\testcpp\src\pointertest.cpp
+1707925958 source:d:\projects_c\testcpp\src\pointertest.cpp
 	<iostream>
 	<stdio.h>
 	<stdlib.h>
 	<pointertest.h>
 
-1707499088 d:\projects_c\testcpp\include\pointertest.h
+1707925960 d:\projects_c\testcpp\include\pointertest.h
 
-1707499087 source:d:\projects_c\testcpp\src\queueexample.cpp
+1707925958 source:d:\projects_c\testcpp\src\queueexample.cpp
 	<iostream>
 	<stdio.h>
 	<stdlib.h>
 	<queueexample.h>
 
-1707499088 d:\projects_c\testcpp\include\queueexample.h
+1707925966 d:\projects_c\testcpp\include\queueexample.h
 
-1707578295 d:\projects_c\testcpp\include\asd2lr1.h
+1707925959 d:\projects_c\testcpp\include\asd2lr1.h
 
-1707578764 source:d:\projects_c\testcpp\src\asd2lr1.cpp
+1707942108 source:d:\projects_c\testcpp\src\asd2lr1.cpp
 	<iostream>
 	<stdio.h>
 	<string>
 	<math.h>
 	<asd2lr1.h>
+
+1708198618 d:\projects_c\testcpp\include\inputexample.h
+
+1708253660 source:d:\projects_c\testcpp\src\inputexample.cpp
+	<iostream>
+	<stdio.h>
+	<string>
+	<math.h>
+	<windows.h>
+	<inputexample.h>
 

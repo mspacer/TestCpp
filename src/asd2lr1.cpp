@@ -23,20 +23,27 @@ int asd2Lr1Main()
     dta.push_back(test4);
     dta.print();
 
-    MyTest pTest = dta.pop_back();
-    pTest.print();
+    MyTest test5 = dta.pop_back();
+    cout << "after pop_back test5: " << &test5.count << " " << &test5.maxMark << " " << &test5.isCheating << endl;
+    cout << "test5: ";  test5.print(); cout << endl;
 
-    pTest = dta.get(0);
-    if (pTest.isEvaliable()) {
-        pTest.print();
+    MyTest* pTest = dta.pop_front();
+    //pTest = &test5;
+    cout << "after pop_front pTest: " << &pTest << " " << pTest << " " << &pTest->count << " " << &pTest->maxMark << " " << &pTest->isCheating << endl;
+    cout << "pTest: "; pTest->print(); cout << endl;
+
+    test5 = dta.get(0);
+    if (test5.isEvaliable()) {
+        test5.print();
     }
-    pTest = dta.get(10);
-    if (pTest.isEvaliable()) {
-        pTest.print();
+    test5 = dta.get(10);
+    if (test5.isEvaliable()) {
+        test5.print();
     }
 
     dta.print();
     delete dta.tests;
+    delete pTest;
 
     cout << endl << "variant with pointers" << endl;
     DynamicTestArray* pDta = new DynamicTestArray;
@@ -59,15 +66,15 @@ int asd2Lr1Main()
 
     pList->print();
 
-    pTest = pList->get(2);
-    pTest.print();
+    MyTest test6 = pList->get(2);
+    test6.print();
 
-    pTest = pList->pop_front();
-    pTest.print();
+    test6 = pList->pop_front();
+    test6.print();
     pList->print();
 
-    pTest = pList->pop_back();
-    pTest.print();
+    test6 = pList->pop_back();
+    test6.print();
     pList->print();
 
     delete pList;
@@ -109,18 +116,30 @@ int DynamicTestArray::push_back(MyTest test) {
     return 1;
 };
 
-MyTest DynamicTestArray::pop_front() {
+MyTest* DynamicTestArray::pop_front() {
     //зчитування та видалення елементу з початку
     if (size == 0) {
         cout << "size = 0" << endl;
     }
 
-    //MyTest test(tests[0].count, tests[0].maxMark, tests[0].isCheating);
-    MyTest test = tests[0];
+    cout << "pop_front tests[0]: " << &tests[0].count << " " << &tests[0].maxMark << " " << &tests[0].isCheating << endl;
+
+    //MyTest test = tests[0];
+    //cout << "pop_front test: " << &test.count << " " << &test.maxMark << " " << &test.isCheating << endl;
+    //cout << "pop_front tests[0].print: "; tests[0].print();
+    MyTest* test = new MyTest(tests[0].count, tests[0].maxMark, tests[0].isCheating);
+    cout << "pop_front test: " << &test << " " << test << " " << &test->count << " " << &test->maxMark << " " << &test->isCheating << endl;
+    //cout << "pop_front test.print: "; test.print();
+
     for(int i = 1; i < size; i++) {
         tests[i-1] = tests[i];
     }
     tests[--size] = {};
+    //cout << "pop_front2 tests[0]: " << &tests[0].count << " " << &tests[0].maxMark << " " << &tests[0].isCheating << endl;
+    //cout << "pop_front2 tests[0].print: ";  tests[0].print();
+
+    //return &tests[0];
+    //return &test;
     return test;
 }
 
@@ -131,7 +150,10 @@ MyTest DynamicTestArray::pop_back() {
     }
 
     size--;
-    MyTest test(tests[size].count, tests[size].maxMark, tests[size].isCheating);
+    //MyTest test(tests[size].count, tests[size].maxMark, tests[size].isCheating);
+    MyTest test = tests[size];
+    cout << "pop_back tests[size]: " << &tests[size] << " " << &tests[size].count << " " << &tests[size].maxMark << " " << &tests[size].isCheating << endl;
+    cout << "pop_back2 test: " << &test << " " << &test.count << " " << &test.maxMark << " " << &test.isCheating << endl;
     tests[size] = {};
     return test;
 }
@@ -209,33 +231,6 @@ int LinkedList::push_back(MyTest test){
     return 1;
 }
 
-MyTest LinkedList::get(int n) {
-    //зчитування n-го елементу
-    if (n > size - 1 || size == 0) {
-        cout << "no such element:" << n << endl;
-        return {};
-    }
-
-    if (n == 0) {
-        return node->test;
-    }
-
-    int i = 1;
-    Node* prevNode = node;
-    Node* nodeNext = node;
-    do {
-        nodeNext = nodeNext->next;
-        if (nodeNext != nullptr) {
-            prevNode = nodeNext;
-        }
-    } while(++i <= n);
-
-    if (nodeNext != NULL) {
-        return nodeNext->test;
-    }
-    return prevNode->test;
-}
-
 MyTest LinkedList::pop_front() {
     //зчитування та видалення елементу з початку
     if (size == 0) {
@@ -270,6 +265,34 @@ MyTest LinkedList::pop_back() {
     size--;
     return test;
 }
+
+MyTest LinkedList::get(int n) {
+    //зчитування n-го елементу
+    if (n > size - 1 || size == 0) {
+        cout << "no such element:" << n << endl;
+        return {};
+    }
+
+    if (n == 0) {
+        return node->test;
+    }
+
+    int i = 1;
+    Node* prevNode = node;
+    Node* nodeNext = node;
+    do {
+        nodeNext = nodeNext->next;
+        if (nodeNext != nullptr) {
+            prevNode = nodeNext;
+        }
+    } while(++i <= n);
+
+    if (nodeNext != NULL) {
+        return nodeNext->test;
+    }
+    return prevNode->test;
+}
+
 
 int LinkedList::sizeList() {
     //знаходження кількості елементів

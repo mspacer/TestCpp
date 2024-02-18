@@ -36,12 +36,14 @@
 		</Compiler>
 		<Unit filename="include/asd2lr1.h" />
 		<Unit filename="include/fibonachy.h" />
+		<Unit filename="include/inputexample.h" />
 		<Unit filename="include/pointertest.h" />
 		<Unit filename="include/queueexample.h" />
 		<Unit filename="include/structexample.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/asd2lr1.cpp" />
 		<Unit filename="src/fibonachy.cpp" />
+		<Unit filename="src/inputexample.cpp" />
 		<Unit filename="src/pointertest.cpp" />
 		<Unit filename="src/queueexample.cpp" />
 		<Unit filename="src/structexample.cpp" />
