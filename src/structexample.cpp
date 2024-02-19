@@ -12,6 +12,7 @@ int structexampleMain() {
 
     Time t1;
     cout << "t1 " << &t1 << " " << &t1.hour << " " << &t1.min << " " << &t1.sec << endl;
+    cout << "t1 " << t1.hour << " " << t1.min << " " << t1.sec << endl;
     t1 = t;
     cout << "t1 " << &t1 << " " << &t1.hour << " " << &t1.min << " " << &t1.sec << endl << endl;
     t1.hour = 20;
@@ -60,14 +61,17 @@ int structexampleMain() {
     t4 = new Time(7,8,9);
     cout << "&t4:          " << &t4 << " " << &t4->hour << " " << &t4->min << " " << &t4->sec << endl << endl;
 
-    *pTimeArr = *t4; // в отличии от ошибки в стр 29 pTimeArr память выделена. Значения копируются
-    //pTimeArr[0] = *t4;
+    //*pTimeArr = *t4; // в отличии от ошибки в стр 29 pTimeArr память выделена. Значения копируются
+    pTimeArr[0] = *t4;
 
-    /*pTimeArr = t4; // Допустимо, но меняется адрес массива, что ведет к ошибке в программе
+    //pTimeArr = t4; // Допустимо, но меняется адрес массива, что ведет к ошибке в программе
     cout << "&pTimeArr: " << &pTimeArr << " " << pTimeArr << endl
         << "&pTimeArr[0]: " << &pTimeArr[0] << endl
         << "&pTimeArr[1]: " << &pTimeArr[1] << endl
-        << "&pTimeArr[2]: " << &pTimeArr[2] << endl; */
+        << "&pTimeArr[2]: " << &pTimeArr[2] << endl;
+
+    t4->min = 51;
+    cout << "t4: " << " "; t4->print();
 
     t4->min = 51;
     cout << "t4: " << " "; t4->print();

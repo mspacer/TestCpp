@@ -8,6 +8,7 @@
 #include <fibonachy.h>
 #include <pointertest.h>
 #include <queueexample.h>
+#include <inputexample.h>
 
 #include <asd2lr1.h>
 
@@ -28,6 +29,10 @@ int main()
     //queueMain();
 
     asd2Lr1Main();
+
+    //inputExampleMain();
+    //inputExampleZero();
+    inputExampleTask2();
 
     return 0;
 }

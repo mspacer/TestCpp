@@ -129,7 +129,7 @@ MyTest* DynamicTestArray::pop_front() {
     //cout << "pop_front tests[0].print: "; tests[0].print();
     MyTest* test = new MyTest(tests[0].count, tests[0].maxMark, tests[0].isCheating);
     cout << "pop_front test: " << &test << " " << test << " " << &test->count << " " << &test->maxMark << " " << &test->isCheating << endl;
-   // cout << "pop_front test.print: "; test->print();
+    //cout << "pop_front test.print: "; test.print();
 
     for(int i = 1; i < size; i++) {
         tests[i-1] = tests[i];
@@ -150,8 +150,8 @@ MyTest DynamicTestArray::pop_back() {
     }
 
     size--;
-    MyTest test(tests[size].count, tests[size].maxMark, tests[size].isCheating);
-    //MyTest test = tests[size];
+    //MyTest test(tests[size].count, tests[size].maxMark, tests[size].isCheating);
+    MyTest test = tests[size];
     cout << "pop_back tests[size]: " << &tests[size] << " " << &tests[size].count << " " << &tests[size].maxMark << " " << &tests[size].isCheating << endl;
     cout << "pop_back2 test: " << &test << " " << &test.count << " " << &test.maxMark << " " << &test.isCheating << endl;
     tests[size] = {};
