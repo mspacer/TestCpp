@@ -4,7 +4,6 @@
 using namespace std;
 
 int structexampleMain();
-int sum(int a, int b);
 
 typedef struct Time {
     int hour, min, sec;

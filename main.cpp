@@ -21,13 +21,13 @@ int main()
 
     //fibonachyMain();
 
-    structexampleMain();
+    //structexampleMain();
 
     //pointerMain();
 
     //queueMain();
 
-    //asd2Lr1Main();
+    asd2Lr1Main();
 
     return 0;
 }
