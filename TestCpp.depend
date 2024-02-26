@@ -1,7 +1,18 @@
 # depslib dependency file v1.0
 118 <<<<<<< HEAD
 
-1708204124 source:d:\projects_c\testcpp\main.cpp
+1708977954 source:d:\projects_c\testcpp\main.cpp
+	<iostream>
+	<stdio.h>
+	<string>
+	<math.h>
+	<windows.h>
+	<structexample.h>
+	<fibonachy.h>
+	<pointertest.h>
+	<queueexample.h>
+	<inputexample.h>
+	<asd2lr2.h>
 
 1707942108 s/remotes/origin/master
 	<iostream>
@@ -36,38 +47,36 @@
 
 1707925958 D
 
-1707940333 source:d:\projects_c\testcpp\src\structexample.cpp
-	<iostream>
-	<structexample.h>
+1708856938 source:d:\projects_c\testcpp\src\structexample.cpp
 	<iostream>
 	<structexample.h>
 
 1707925966 d:\projects_c\testcpp\include\structexample.h
 
-1707679185 d:\projects_c\testcpp\include\fibonachy.h
+1707925959 d:\projects_c\testcpp\include\fibonachy.h
 
-1707679183 source:d:\projects_c\testcpp\src\fibonachy.cpp
+1707925957 source:d:\projects_c\testcpp\src\fibonachy.cpp
 	<iostream>
 	<stdio.h>
 	<string>
 	<math.h>
 	<fibonachy.h>
 
-1707679183 source:d:\projects_c\testcpp\src\pointertest.cpp
+1707925958 source:d:\projects_c\testcpp\src\pointertest.cpp
 	<iostream>
 	<stdio.h>
 	<stdlib.h>
 	<pointertest.h>
 
-1707679185 d:\projects_c\testcpp\include\pointertest.h
+1707925960 d:\projects_c\testcpp\include\pointertest.h
 
-1707679185 source:d:\projects_c\testcpp\src\queueexample.cpp
+1707925958 source:d:\projects_c\testcpp\src\queueexample.cpp
 	<iostream>
 	<stdio.h>
 	<stdlib.h>
 	<queueexample.h>
 
-1707679186 d:\projects_c\testcpp\include\queueexample.h
+1707925966 d:\projects_c\testcpp\include\queueexample.h
 
 1707925959 d:\projects_c\testcpp\include\asd2lr1.h
 
@@ -75,11 +84,22 @@
 
 1708198618 d:\projects_c\testcpp\include\inputexample.h
 
-1708253660 source:d:\projects_c\testcpp\src\inputexample.cpp
+1708856807 source:d:\projects_c\testcpp\src\inputexample.cpp
 	<iostream>
 	<stdio.h>
 	<string>
 	<math.h>
 	<windows.h>
 	<inputexample.h>
+
+1708980718 source:d:\projects_c\testcpp\src\asd2lr2.cpp
+	<iostream>
+	<stdio.h>
+	<string>
+	<math.h>
+	<cstdlib>
+	<asd2lr2.h>
+
+1708981968 d:\projects_c\testcpp\include\asd2lr2.h
+	<cstdlib>
 

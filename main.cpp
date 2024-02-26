@@ -11,6 +11,7 @@
 #include <inputexample.h>
 
 #include <asd2lr1.h>
+#include <asd2lr2.h>
 
 using namespace std;
 
@@ -29,11 +30,12 @@ int main()
 
     //queueMain();
 
-    asd2Lr1Main();
+    //asd2Lr1Main();
+    asd2Lr2Main();
 
     //inputExampleMain();
     //inputExampleZero();
-    inputExampleTask2();
+    //inputExampleTask2();
 
     return 0;
 }
