@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
 118 <<<<<<< HEAD
 
-1709136587 source:d:\projects_c\testcpp\main.cpp
+1709150753 source:d:\projects_c\testcpp\main.cpp
 	<iostream>
 	<stdio.h>
 	<string>
@@ -14,6 +14,7 @@
 	<inputexample.h>
 	<asd2lr1.h>
 	<asd2lr2.h>
+	<lab11.h>
 
 1707942108 s/remotes/origin/master
 	<iostream>
@@ -93,7 +94,7 @@
 	<windows.h>
 	<inputexample.h>
 
-1709137775 source:d:\projects_c\testcpp\src\asd2lr2.cpp
+1709138812 source:d:\projects_c\testcpp\src\asd2lr2.cpp
 	<iostream>
 	<stdio.h>
 	<string>
@@ -106,4 +107,15 @@
 
 1709138182 d:\projects_c\testcpp\include\asd2lr2.h
 	<cstdlib>
+
+1709152540 d:\projects_c\testcpp\include\lab11.h
+
+1709152455 source:d:\projects_c\testcpp\src\lab11.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<math.h>
+	<cstdlib>
+	<conio.h>
+	<lab11.h>
 

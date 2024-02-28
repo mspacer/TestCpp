@@ -12,6 +12,7 @@
 
 #include <asd2lr1.h>
 #include <asd2lr2.h>
+#include <lab11.h>
 
 using namespace std;
 
@@ -33,11 +34,13 @@ int main()
     //asd2Lr1Main();
 
     //asd2Lr2Main();
-    testHashTable();
+    //testHashTable();
 
     //inputExampleMain();
     //inputExampleZero();
     //inputExampleTask2();
+
+    mainLab11();
 
     return 0;
 }
