@@ -31,7 +31,9 @@ int main()
     //queueMain();
 
     //asd2Lr1Main();
-    asd2Lr2Main();
+
+    //asd2Lr2Main();
+    testHashTable();
 
     //inputExampleMain();
     //inputExampleZero();
