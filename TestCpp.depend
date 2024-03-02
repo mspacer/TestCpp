@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
 118 <<<<<<< HEAD
 
-1709150753 source:d:\projects_c\testcpp\main.cpp
+1709398479 source:d:\projects_c\testcpp\main.cpp
 	<iostream>
 	<stdio.h>
 	<string>
@@ -12,6 +12,8 @@
 	<pointertest.h>
 	<queueexample.h>
 	<inputexample.h>
+	<files.h>
+	<stringExample.h>
 	<asd2lr1.h>
 	<asd2lr2.h>
 	<lab11.h>
@@ -108,14 +110,39 @@
 1709138182 d:\projects_c\testcpp\include\asd2lr2.h
 	<cstdlib>
 
-1709152540 d:\projects_c\testcpp\include\lab11.h
+1709399015 d:\projects_c\testcpp\include\lab11.h
 
-1709152455 source:d:\projects_c\testcpp\src\lab11.cpp
+1709399997 source:d:\projects_c\testcpp\src\lab11.cpp
 	<iostream>
 	<stdio.h>
-	<string.h>
+	<string>
 	<math.h>
 	<cstdlib>
 	<conio.h>
+	<string.h>
+	<fstream>
 	<lab11.h>
+	<stringExample.h>
+
+1709299211 d:\projects_c\testcpp\include\files.h
+	<string.h>
+
+1709303072 source:d:\projects_c\testcpp\src\files.cpp
+	<iostream>
+	<stdio.h>
+	<string>
+	<math.h>
+	<cstdlib>
+	<conio.h>
+	<fstream>
+	<files.h>
+
+1709397083 d:\projects_c\testcpp\include\stringexample.h
+
+1709398479 source:d:\projects_c\testcpp\src\stringexample.cpp
+	<iostream>
+	<stdio.h>
+	<string>
+	<string.h>
+	<stringExample.h>
 

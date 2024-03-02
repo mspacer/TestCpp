@@ -9,6 +9,8 @@
 #include <pointertest.h>
 #include <queueexample.h>
 #include <inputexample.h>
+#include <files.h>
+#include <stringExample.h>
 
 #include <asd2lr1.h>
 #include <asd2lr2.h>
@@ -18,7 +20,6 @@ using namespace std;
 
 int main()
 {
-
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
     //sum(3, 6);
@@ -40,7 +41,11 @@ int main()
     //inputExampleZero();
     //inputExampleTask2();
 
+    //mainStringExample();
+
     mainLab11();
+
+    //mainFiles();
 
     return 0;
 }

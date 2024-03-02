@@ -2,10 +2,9 @@
 #define LAB11_H_INCLUDED
 
 int mainLab11();
-void chooseName();
-void createFile();
-void addWord();
-void out(FILE* f);
-int mainExample();
+int menu();
+void chooseFileName(int mode);
+void createFile(int mode);
+int resultFile();
 
 #endif // LAB11_H_INCLUDED

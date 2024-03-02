@@ -1,182 +1,69 @@
 #include <iostream>
 #include <stdio.h>
-#include <string.h>
+#include <string>
 #include <math.h>
 #include <cstdlib>
 #include<conio.h>
+#include <string.h>
+
+#include <fstream>
+
 #include <lab11.h>
+#include <stringExample.h>
 
 using namespace std;
 
-FILE* fin, *fout; //покажчики на вхідний та вихідний файли
-char fileName[2][20]; //назви вхідного та вихідного файлів
+char filesLab11[3][20] = {{"data\\f1.txt"}, {"data\\f2.txt"}}; //назви вхідного та вихідного файлів
+//char filesLab11[3][20]; //назви вхідного та вихідного файлів
+FILE* fin1Lab11, *fin2Lab11, *fresultLab11; //покажчики на вхідний та вихідний файли
+char* fPath = "data\\";
 
 int mainLab11() {
     cout <<  "Lab11" << endl;
 
-    mainExample();
+    menu();
 
     return 1;
 }
 
-
-//-----------------EXAMPLE--------------------------------------------------------------------------------------------------------------
-void chooseName() {
-    puts("enter name of file for write");
-    fflush(stdin);
-    gets(fileName[0]);
-    puts("enter name of file for read");
-    fflush(stdin);
-    gets(fileName[1]);
-}
-
-//========= створення текстового файла =================
-void createFile() {
-    char answer; //ознака завершення введення даних
-    char s[100]; //рядок, у який вводять дані
-
-    fflush(stdin);
-    if (strcmp(fileName[0], "") == 0) {
-        chooseName();
-    }
-    fout = fopen(fileName[0],"w"); //відкрити файл для запису
-
-    do {
-        puts("input string:"); //вивести запит користувачу
-        fflush(stdin);
-        gets(s); //ввести з клавіатури рядок
-        fputs(s, fout); //записати рядок у файл
-        fputc('\n', fout); //записати символ переведення курсору
-        puts("continue ? [y/n]");
-        answer = getch(); //задати ознаку продовження введення
-    } while ((answer != 'n') && (answer != 'N'));
-
-    fclose(fout); //закрити файл для запису
-}
-
-//===== додавання до рядка найдовшого слова ============
-void addWord() {
-    int max; //довжина найдовшого слова
-    char word[20]; //найдовше слово у рядку
-    char sa[100], sb[100]; //зчитаний і записаний рядки
-    char* p; //покажчик на поточне слово
-    char* spacer=". ,:"; //роздільники слів у рядках
-
-    fin = fopen(fileName[0],"r"); //відкрити файл для читання
-    fout = fopen(fileName[1],"w"); //відкрити файл для запису
-
-    while (!feof(fin)) {//доки не кінець вхідного файлу
-        fgets(sa, 100, fin); //читати рядок із файлу
-
-        if (feof(fin)) {
-                break; //якщо кінець файлу, вийти з циклу
-        }
-
-        strcpy(sb,sa); //скопіювати зчитаний з файлу рядок
-        p = strtok(sb,spacer); //перше слово
-        max = strlen(p); //вважати найдовшим
-
-        while (p != NULL) {//доки у рядку є слова
-            if(max <= strlen(p)) {//якщо є слово довше за прийняте
-                max = strlen(p); //вважати поточне слово найдовшим
-                strcpy(word,p); //запам’ятати найдовше слово
-
-                if (word[strlen(word)-1] == '\n') {//якщо словоостаннє в рядку, то його останній символ
-                    word[strlen(word)-1] = ' '; //замінити на пробіл
-                }
-            }
-
-            p=strtok(NULL,spacer); //визначити наступне слово
-        }
-
-        sa[strlen(sa) - 1] = ' '; //видалити символ кінця рядка
-        strcat(sa, word); //дописати слово у кінець рядка
-        fputs(sa, fout); //записати рядок у новий файл
-        fputc('\n', fout); //записати символ нового рядка у файл
-    } //кінець циклу читання файлу
-
-    fclose(fin);
-    fclose(fout);
-    fout = fopen(fileName[1], "r");
-    out(fout);
-    getch();
-    fclose(fout);
-}
-
-//======== виведення файлу на екран ====================
-void out(FILE* f) { //параметр f – покажчик на файл, що виводиться
-    char s[100]; //рядок, зчитаний з файлу
-
-    while(!feof(f)) {//доки не кінець файлу
-        fgets(s,100,f); //читати рядок файлу
-
-        if (feof(f)) {
-            break; //якщо кінець файлу, вийти з циклу
-        }
-
-        puts(s); //вивести рядок на екран
-    }
-
-    fclose(f);
-}
-
-//============головна програма ========================
-int mainExample() {
-    char filename[20];
-    puts("Search longest word in strings from file");
-    system("pause");
-    while (1) {
+int menu() {
+    while(1) {
         system("cls");
-        cout<<" MENU \n"<<endl;
-        cout<<"1. Choose name of file"<<endl;
-        cout<<"2. Create file"<<endl;
-        cout<<"3. Read data from file"<<endl;
-        cout<<"4. Add word to string"<<endl;;
-        cout<<"5. Exit"<<endl;
-        cout<<endl;
+        cout << " MENU \n" << endl;
+        cout << "1. Choose name of file" << endl;
+        cout << "2. Создать первый файл" << endl;
+        cout << "3. Создать второй файл" << endl;
+        cout << "4. Создать третий файл" << endl;
+        cout << "5. Exit" << endl;
+        cout << endl;
 
         int key; //номер пункту меню
-        cout<< "Choosen menu item:";
-        cin>>key;
+        cout << "Choosen menu item:";
+        cin >> key;
         system("cls");
 
-        switch(key) {//вибір функції реалізації меню
+        switch (key) {//вибір функції реалізації меню
             case 1: {
-                chooseName();
+                chooseFileName(0);
+                chooseFileName(1);
+                getch();
                 break;
                 }
             case 2: {
-                createFile();
+                chooseFileName(0);
+                createFile(0);
                 break;
                 }
             case 3: {
-                puts("choose name of file:");
-                chooseName();
-
-                if ((fin = fopen(fileName[0], "r")) == NULL) {//можливість відкриття файлу
-                    puts("file not created");
-                    strcpy(filename, fileName[1]);
-                } else {
-                    if ((fin = fopen(fileName[1], "r")) == NULL) {
-                        puts("file not created");
-                        strcpy(filename, fileName[0]);
-                    }
+                chooseFileName(1);
+                createFile(1);
+                break;
                 }
-
-                if ((fin = fopen(filename, "r")) == NULL) {
-                    puts("return menu");
-                } else {
-                    cout<<"text from file '" << filename << "':" <<endl;
-                    out(fin);
-                }
-
-                getch();
+            case 4: {
+                chooseFileName(2);
+                resultFile();
                 break;
             }
-            case 4: {
-                addWord();
-                break;
-                }
             case 5: {
                 exit(0);
                 break;
@@ -187,5 +74,214 @@ int mainExample() {
                 break;
                 }
         }//switch
+        //fflush(stdin);
     }//while
+}
+
+void chooseFileName(int mode) {
+    if (mode == 2) {
+        puts("enter name of file for write");
+    } else {
+        puts("enter name of file for read");
+    }
+
+    fflush(stdin);
+    gets(filesLab11[mode]);
+    strcatBegin2(filesLab11[mode], fPath);
+    cout << "filesLab11[" << mode << "]: " << filesLab11[mode] << endl;
+}
+
+/*void openFile(int mode) {
+    puts("enter name of file for read");
+    fflush(stdin);
+    gets(filesLab11[mode]);
+
+    fin1Lab11 = fopen(filesLab11[mode], "r"); //відкрити файл для читання
+    if (fin1Lab11 == NULL) {//можливість відкриття файлу
+        cout << "File " << filesLab11[mode] << " not found." << endl;
+        chooseFileName(mode);
+    }
+}*/
+
+void createFile(int mode) {
+    char answer; //ознака завершення введення даних
+    char s[100]; //рядок, у який вводять дані
+
+    fflush(stdin);
+    fin1Lab11 = fopen(filesLab11[mode], "w"); //відкрити файл для запису
+
+    do {
+        puts("input string:"); //вивести запит користувачу
+        fflush(stdin);
+        gets(s); //ввести з клавіатури рядок
+        fputs(s, fin1Lab11); //записати рядок у файл
+        fputc('\n', fin1Lab11); //записати символ переведення курсору
+        puts("continue ? [y/n]");
+        answer = getch(); //задати ознаку продовження введення
+    } while ((answer != 'n') && (answer != 'N'));
+
+    fclose(fin1Lab11); //закрити файл для запису
+}
+
+int resultFile() {
+    int n = 100;
+    int m = 100;
+    char sa[n+1], sb[n+1]; //зчитаний і записаний рядки
+    char* spacer = " "; //роздільники слів у рядках
+    char ** pSb = (char **) malloc(n*sizeof(char*));
+    for(int i = 0; i < n; i++) {
+        pSb[i] = (char *)malloc(m*sizeof(char));
+    }
+
+    fin1Lab11 = fopen(filesLab11[0],"r"); //відкрити файл для читання
+    fin2Lab11 = fopen(filesLab11[1],"r"); //відкрити файл для читання
+
+    if (fin1Lab11 == NULL) {//можливість відкриття файлу
+        cout << "Первый файл не найден" << endl;
+        getch();
+        return 0;
+    }
+
+    if (fin2Lab11 == NULL) {//можливість відкриття файлу
+        cout << "Второй файл не найден" << endl;
+        getch();
+        return 0;
+    }
+
+    int line = 0;
+    while (!feof(fin2Lab11)) {//доки не кінець вхідного файлу
+        fgets(pSb[line], n, fin2Lab11); //читати рядок із файлу
+
+        if (feof(fin2Lab11) || isEmptyStr(pSb[line])) {
+            *pSb[line] = '\0';
+            break; //якщо кінець файлу, вийти з циклу
+        }
+
+        line++;
+    } //кінець циклу читання файлу
+
+
+    fresultLab11 = fopen(filesLab11[2], "w"); //відкрити файл для запису
+
+    line = 0;
+    char word[100];
+    while (!feof(fin1Lab11)) {//доки не кінець вхідного файлу
+        fgets(sa, n, fin1Lab11); //читати рядок із файлу
+
+        if (feof(fin1Lab11) || strlen(sa) == 0) {
+            break; //якщо кінець файлу, вийти з циклу
+        }
+
+        if (strlen(pSb[line]) > 0) {
+            if (sa[strlen(sa) - 1] == '\n') {//якщо словоостаннє в рядку, то його останній символ
+                sa[strlen(sa) - 1] = ' '; //замінити на пробіл
+            }
+
+            strcat(sa, pSb[line]);
+            sa[strlen(sa) - 1] = '\n';
+        }
+/*        strcpy(word, pSa[line]);
+        //cout << word << " length: " <<  strlen(word) << endl;
+        if (word[strlen(word)-1] == '\n') {//якщо словоостаннє в рядку, то його останній символ
+            word[strlen(word)-1] = ' '; //замінити на пробіл
+        }
+
+        strcat(word, sb);
+*/
+        fputs(sa, fresultLab11); //записати рядок у новий файл
+
+        line++;
+    } //кінець циклу читання файлу
+
+    for(int i = 0; i < n; i++) {
+        if(*pSb[i] == '\0')
+            break;
+        if (strlen(pSb[i]) > 0)
+            cout << i << ") " << pSb[i] << endl;
+        free(pSb[i]);
+    }
+
+    free(pSb);
+    fclose(fin1Lab11);
+    fclose(fin2Lab11);
+    fclose(fresultLab11);
+
+    getch();
+}
+
+int resultFile2() {
+    int n = 100;
+    int m = 100;
+    char sa[n+1], sb[n+1]; //зчитаний і записаний рядки
+    char* spacer = " "; //роздільники слів у рядках
+
+    char ** pSa = (char **) malloc(n*sizeof(char*));
+    for(int i = 0; i < n; i++) {
+        pSa[i] = (char *)malloc(m*sizeof(char));
+    }
+
+    fin1Lab11 = fopen(filesLab11[0],"r"); //відкрити файл для читання
+    fin2Lab11 = fopen(filesLab11[1],"r"); //відкрити файл для читання
+
+    if (fin1Lab11 == NULL) {//можливість відкриття файлу
+        cout << "Первый файл не найден" << endl;
+        getch();
+        return 0;
+    }
+
+    if (fin2Lab11 == NULL) {//можливість відкриття файлу
+        cout << "Второй файл не найден" << endl;
+        getch();
+        return 0;
+    }
+
+    int line = 0;
+    while (!feof(fin1Lab11)) {//доки не кінець вхідного файлу
+        fgets(pSa[line], n, fin1Lab11); //читати рядок із файлу
+
+        if (feof(fin1Lab11) || isEmptyStr(pSa[line])) {
+            *pSa[line] = '\0';
+            break; //якщо кінець файлу, вийти з циклу
+        }
+
+        line++;
+    } //кінець циклу читання файлу
+
+
+    fresultLab11 = fopen(filesLab11[2], "w"); //відкрити файл для запису
+
+    line = 0;
+    char word[100];
+    while (!feof(fin2Lab11)) {//доки не кінець вхідного файлу
+        fgets(sb, n, fin2Lab11); //читати рядок із файлу
+
+        if (feof(fin2Lab11) || strlen(pSa[line]) == 0 ) {
+            break; //якщо кінець файлу, вийти з циклу
+        }
+        strcpy(word, pSa[line]);
+        //cout << word << " length: " <<  strlen(word) << endl;
+        if (word[strlen(word)-1] == '\n') {//якщо словоостаннє в рядку, то його останній символ
+            word[strlen(word)-1] = ' '; //замінити на пробіл
+        }
+
+        strcat(word, sb);
+        fputs(word, fresultLab11); //записати рядок у новий файл
+
+        line++;
+    } //кінець циклу читання файлу
+
+    for(int i = 0; i < n; i++) {
+        if(*pSa[i] == '\0')
+            break;
+        //if (strlen(pSa[i]) > 0)
+        //    cout << i << ") " << pSa[i] << endl;
+        free(pSa[i]);
+    }
+
+    free(pSa);
+    fclose(fin1Lab11);
+    fclose(fin2Lab11);
+    fclose(fresultLab11);
+
+    getch();
 }
