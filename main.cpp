@@ -11,6 +11,7 @@
 #include <inputexample.h>
 #include <files.h>
 #include <stringExample.h>
+#include<filesStruct.h>
 
 #include <asd2lr1.h>
 #include <asd2lr2.h>
@@ -43,9 +44,10 @@ int main()
 
     //mainStringExample();
 
-    mainLab11();
+    //mainLab11();
 
     //mainFiles();
+    mainFileStruct();
 
     return 0;
 }

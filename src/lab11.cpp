@@ -134,7 +134,7 @@ int resultFile() {
     }
 
     fin1Lab11 = fopen(filesLab11[0],"r"); //відкрити файл для читання
-    fin2Lab11 = fopen(filesLab11[1],"r"); //відкрити файл для читання
+//    fin2Lab11 = fopen(filesLab11[1],"r"); //відкрити файл для читання
 
     if (fin1Lab11 == NULL) {//можливість відкриття файлу
         cout << "Первый файл не найден" << endl;
@@ -142,14 +142,14 @@ int resultFile() {
         return 0;
     }
 
-    if (fin2Lab11 == NULL) {//можливість відкриття файлу
+ /*   if (fin2Lab11 == NULL) {//можливість відкриття файлу
         cout << "Второй файл не найден" << endl;
         getch();
         return 0;
     }
-
+*/
     int line = 0;
-    while (!feof(fin2Lab11)) {//доки не кінець вхідного файлу
+ /*   while (!feof(fin2Lab11)) {//доки не кінець вхідного файлу
         fgets(pSb[line], n, fin2Lab11); //читати рядок із файлу
 
         if (feof(fin2Lab11) || isEmptyStr(pSb[line])) {
@@ -159,7 +159,7 @@ int resultFile() {
 
         line++;
     } //кінець циклу читання файлу
-
+*/
 
     fresultLab11 = fopen(filesLab11[2], "w"); //відкрити файл для запису
 
@@ -172,22 +172,35 @@ int resultFile() {
             break; //якщо кінець файлу, вийти з циклу
         }
 
-        if (strlen(pSb[line]) > 0) {
-            if (sa[strlen(sa) - 1] == '\n') {//якщо словоостаннє в рядку, то його останній символ
-                sa[strlen(sa) - 1] = ' '; //замінити на пробіл
-            }
+        if (sa[strlen(sa) - 1] == '\n') {//якщо словоостаннє в рядку, то його останній символ
+            sa[strlen(sa) - 1] = ' '; //замінити на пробіл
+        }
 
-            strcat(sa, pSb[line]);
+        fgets(sb, n, fin2Lab11); //читати рядок із файлу
+        if (feof(fin2Lab11) || isEmptyStr(sb)) {
+            continue; //якщо кінець файлу, вийти з циклу
+        } else {
+            strcat(sa, sb);
             sa[strlen(sa) - 1] = '\n';
         }
-/*        strcpy(word, pSa[line]);
-        //cout << word << " length: " <<  strlen(word) << endl;
-        if (word[strlen(word)-1] == '\n') {//якщо словоостаннє в рядку, то його останній символ
-            word[strlen(word)-1] = ' '; //замінити на пробіл
-        }
 
-        strcat(word, sb);
-*/
+ /*       int line2 = 0;
+        fin2Lab11 = fopen(filesLab11[1],"r"); //відкрити файл для читання
+        while (!feof(fin2Lab11)) {//доки не кінець вхідного файлу
+            fgets(sb, n, fin2Lab11); //читати рядок із файлу
+
+            if (feof(fin2Lab11) || isEmptyStr(sb)) {
+                break; //якщо кінець файлу, вийти з циклу
+            }
+            if (line2 == line) {
+                strcat(sa, sb);
+                sa[strlen(sa) - 1] = '\n';
+            }
+            line2++;
+         } //кінець циклу читання файлу
+
+        fclose(fin2Lab11);*/
+
         fputs(sa, fresultLab11); //записати рядок у новий файл
 
         line++;
@@ -196,14 +209,14 @@ int resultFile() {
     for(int i = 0; i < n; i++) {
         if(*pSb[i] == '\0')
             break;
-        if (strlen(pSb[i]) > 0)
-            cout << i << ") " << pSb[i] << endl;
+        //if (strlen(pSb[i]) > 0)
+        //    cout << i << ") " << pSb[i] << endl;
         free(pSb[i]);
     }
 
     free(pSb);
     fclose(fin1Lab11);
-    fclose(fin2Lab11);
+//    fclose(fin2Lab11);
     fclose(fresultLab11);
 
     getch();
