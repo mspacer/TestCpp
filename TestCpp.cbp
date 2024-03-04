@@ -39,6 +39,7 @@
 		<Unit filename="include/inputexample.h" />
 		<Unit filename="include/pointertest.h" />
 		<Unit filename="include/queueexample.h" />
+		<Unit filename="include/stringTest.h" />
 		<Unit filename="include/structexample.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/asd2lr1.cpp" />
@@ -46,6 +47,7 @@
 		<Unit filename="src/inputexample.cpp" />
 		<Unit filename="src/pointertest.cpp" />
 		<Unit filename="src/queueexample.cpp" />
+		<Unit filename="src/stringTest.cpp" />
 		<Unit filename="src/structexample.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

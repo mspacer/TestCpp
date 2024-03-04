@@ -9,6 +9,7 @@
 #include <pointertest.h>
 #include <queueexample.h>
 #include <inputexample.h>
+#include <stringTest.h>
 
 #include <asd2lr1.h>
 
@@ -28,11 +29,13 @@ int main()
 
     //queueMain();
 
-    asd2Lr1Main();
+   // asd2Lr1Main();
 
-    //inputExampleMain();
+    inputExampleMain();
     //inputExampleZero();
-    inputExampleTask2();
+    //inputExampleTask2();
+
+    //stringTestMain();
 
     return 0;
 }

@@ -1,7 +1,19 @@
 # depslib dependency file v1.0
 118 <<<<<<< HEAD
 
-1708204124 source:d:\projects_c\testcpp\main.cpp
+1708368786 source:d:\projects_c\testcpp\main.cpp
+	<iostream>
+	<stdio.h>
+	<string>
+	<math.h>
+	<windows.h>
+	<structexample.h>
+	<fibonachy.h>
+	<pointertest.h>
+	<queueexample.h>
+	<inputexample.h>
+	<stringTest.h>
+	<asd2lr1.h>
 
 1707942108 s/remotes/origin/master
 	<iostream>
@@ -36,13 +48,11 @@
 
 1707925958 D
 
-1707940333 source:d:\projects_c\testcpp\src\structexample.cpp
-	<iostream>
-	<structexample.h>
+1708354079 source:d:\projects_c\testcpp\src\structexample.cpp
 	<iostream>
 	<structexample.h>
 
-1707925966 d:\projects_c\testcpp\include\structexample.h
+1707814295 d:\projects_c\testcpp\include\structexample.h
 
 1707679185 d:\projects_c\testcpp\include\fibonachy.h
 
@@ -69,17 +79,32 @@
 
 1707679186 d:\projects_c\testcpp\include\queueexample.h
 
-1707925959 d:\projects_c\testcpp\include\asd2lr1.h
+1707820535 d:\projects_c\testcpp\include\asd2lr1.h
 
-1707942108 source:d:\projects_c\testcpp\src\asd2lr1.cpp
+1708354079 source:d:\projects_c\testcpp\src\asd2lr1.cpp
+	<iostream>
+	<stdio.h>
+	<string>
+	<math.h>
+	<asd2lr1.h>
 
-1708198618 d:\projects_c\testcpp\include\inputexample.h
+1708353933 d:\projects_c\testcpp\include\inputexample.h
 
-1708253660 source:d:\projects_c\testcpp\src\inputexample.cpp
+1708369120 source:d:\projects_c\testcpp\src\inputexample.cpp
 	<iostream>
 	<stdio.h>
 	<string>
 	<math.h>
 	<windows.h>
 	<inputexample.h>
+
+1708365432 d:\projects_c\testcpp\include\stringtest.h
+
+1708368657 source:d:\projects_c\testcpp\src\stringtest.cpp
+	<iostream>
+	<stdio.h>
+	<string>
+	<math.h>
+	<windows.h>
+	<stringTest.h>
 
