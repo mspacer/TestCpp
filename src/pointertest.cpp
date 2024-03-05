@@ -184,9 +184,35 @@ int structPointer()
     cout << pd0->year << endl;
     cout << &(pd0->year) << endl;
 
+    cout << "&pd: " << &pd << " pd: " << pd << " &pd->day: " << &pd->day << " pd->day: " << pd->day << endl;
+
+    MyDate* pd2 /*= NULL*/;
+    bool isNull = pd2 == nullptr;
+
+/*     *pd2 = *pd;*/ // error. no memory
+    pd2 = pd; // ссылаютя на один MyDate
+    //delete pd; // pd2->day непонятное значение
+    //delete pd2; // будет ошибка в delete pd;
+
+    cout << "pd2 == nullptr: " << isNull << endl;
+    cout << "&pd2: " << &pd2 << " pd2: " << pd2 << " &pd2->day: " << &pd2->day << " pd2->day: " << pd2->day <<  endl;
+
     // освободить память использованную под переменную pd
     delete pd0;
     delete pd;
+    //delete pd2;//ошибка. delete pd уже удалил MyDate
+
+    cout << "----------" << endl;
+    pd = new MyDate;
+    pd->day = 21;
+    cout << "&pd: " << &pd << " pd: " << pd << " &pd->day: " << &pd->day << " pd->day: " << pd->day << endl;
+
+    pd2 = new MyDate;
+    pd2->day = 5;
+    cout << "&pd2: " << &pd2 << " pd2: " << pd2 << " &pd2->day: " << &pd2->day << " pd2->day: " << pd2->day <<  endl;
+
+    *pd2 = *pd;
+    cout << "&pd2: " << &pd2 << " pd2: " << pd2 << " &pd2->day: " << &pd2->day << " pd2->day: " << pd2->day <<  endl;
 
     cout << "----------" << endl;
     return 0;

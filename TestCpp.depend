@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
 118 <<<<<<< HEAD
 
-1708368786 source:d:\projects_c\testcpp\main.cpp
+1709633032 source:d:\projects_c\testcpp\main.cpp
 	<iostream>
 	<stdio.h>
 	<string>
@@ -13,7 +13,13 @@
 	<queueexample.h>
 	<inputexample.h>
 	<stringTest.h>
+	<files.h>
+	<stringExample.h>
+	<filesStruct.h>
 	<asd2lr1.h>
+	<asd2lr2.h>
+	<lab11.h>
+	<lab12.h>
 
 1707942108 s/remotes/origin/master
 	<iostream>
@@ -63,13 +69,13 @@
 	<math.h>
 	<fibonachy.h>
 
-1707679183 source:d:\projects_c\testcpp\src\pointertest.cpp
+1709557928 source:d:\projects_c\testcpp\src\pointertest.cpp
 	<iostream>
 	<stdio.h>
 	<stdlib.h>
 	<pointertest.h>
 
-1707679185 d:\projects_c\testcpp\include\pointertest.h
+1709557928 d:\projects_c\testcpp\include\pointertest.h
 
 1707679185 source:d:\projects_c\testcpp\src\queueexample.cpp
 	<iostream>
@@ -98,7 +104,66 @@
 	<windows.h>
 	<inputexample.h>
 
-1708365432 d:\projects_c\testcpp\include\stringtest.h
+1709557928 source:d:\projects_c\testcpp\src\asd2lr2.cpp
+	<iostream>
+	<stdio.h>
+	<string>
+	<math.h>
+	<cstdlib>
+	<asd2lr2.h>
+	<unordered_map>
+	<ctime>
+	<algorithm>
+
+1709557928 d:\projects_c\testcpp\include\asd2lr2.h
+	<cstdlib>
+
+1709557928 d:\projects_c\testcpp\include\lab11.h
+
+1709557928 source:d:\projects_c\testcpp\src\lab11.cpp
+	<iostream>
+	<stdio.h>
+	<string>
+	<math.h>
+	<cstdlib>
+	<conio.h>
+	<string.h>
+	<fstream>
+	<lab11.h>
+	<stringExample.h>
+
+1709557928 d:\projects_c\testcpp\include\files.h
+	<string.h>
+
+1709557928 source:d:\projects_c\testcpp\src\files.cpp
+	<iostream>
+	<stdio.h>
+	<string>
+	<math.h>
+	<cstdlib>
+	<conio.h>
+	<fstream>
+	<files.h>
+
+1709557928 d:\projects_c\testcpp\include\stringexample.h
+
+1709557929 source:d:\projects_c\testcpp\src\stringexample.cpp
+	<iostream>
+	<stdio.h>
+	<string>
+	<string.h>
+	<stringExample.h>
+
+1709557928 source:d:\projects_c\testcpp\src\filesstruct.cpp
+	<iostream>
+	<conio.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<iomanip>
+	<filesStruct.h>
+
+1709491221 d:\projects_c\testcpp\include\filesstruct.
 
 1708368657 source:d:\projects_c\testcpp\src\stringtest.cpp
 	<iostream>
@@ -107,4 +172,22 @@
 	<math.h>
 	<windows.h>
 	<stringTest.h>
+
+1708365432 d:\projects_c\testcpp\include\stringtest.h
+
+1709557928 d:\projects_c\testcpp\include\filesstruct.h
+
+1709665522 d:\projects_c\testcpp\include\lab12.h
+
+1709670927 source:d:\projects_c\testcpp\src\lab12.cpp
+	<iostream>
+	<conio.h>
+	<errno.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<iomanip>
+	<string>
+	<fstream>
+	<lab12.h>
 

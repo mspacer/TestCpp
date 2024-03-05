@@ -10,8 +10,14 @@
 #include <queueexample.h>
 #include <inputexample.h>
 #include <stringTest.h>
+#include <files.h>
+#include <stringExample.h>
+#include<filesStruct.h>
 
 #include <asd2lr1.h>
+#include <asd2lr2.h>
+#include <lab11.h>
+#include<lab12.h>
 
 using namespace std;
 
@@ -29,13 +35,24 @@ int main()
 
     //queueMain();
 
-   // asd2Lr1Main();
+    //asd2Lr1Main();
 
-    inputExampleMain();
+    //asd2Lr2Main();
+    //testHashTable();
+
+    //inputExampleMain();
     //inputExampleZero();
     //inputExampleTask2();
 
     //stringTestMain();
+    //mainStringExample();
+
+    //mainLab11();
+
+    //mainFiles();
+    //mainFileStruct();
+
+    mainLab12();
 
     return 0;
 }
