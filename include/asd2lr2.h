@@ -72,7 +72,7 @@ struct HLinkedList {
     bool remove(llong key);
 };
 
-const int M_BUCKETS = 1000;
+const int M_BUCKETS = 10000;
 
 struct HashTable {
     HLinkedList *bucketsArray;

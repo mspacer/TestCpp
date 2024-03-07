@@ -117,8 +117,8 @@ llong generateRandLong1() {
 //---------------------HashTable-----------------------------------------------------------------------------------------------------
 // знаходnження хеш-функції від ключа
 int HashTable::hash(llong key) {
-    int a = 7;
-    int b = 777;
+    int a = 1;
+    int b = 3;
     llong p = 9149658775000477;
 
     int i = ((a * key + b) % p) % M_BUCKETS;
@@ -152,7 +152,7 @@ bool HashTable::insert(llong key, TMem *value) {
             replacedCount++;
     }
 
-    checkLoadFactor();
+    //checkLoadFactor();
     return 1;
 }
 
