@@ -36,6 +36,7 @@
 		</Compiler>
 		<Unit filename="include/asd2lr1.h" />
 		<Unit filename="include/asd2lr2.h" />
+		<Unit filename="include/asd2lr3.h" />
 		<Unit filename="include/fibonachy.h" />
 		<Unit filename="include/files.h" />
 		<Unit filename="include/filesStruct.h" />
@@ -50,6 +51,7 @@
 		<Unit filename="main.cpp" />
 		<Unit filename="src/asd2lr1.cpp" />
 		<Unit filename="src/asd2lr2.cpp" />
+		<Unit filename="src/asd2lr3.cpp" />
 		<Unit filename="src/fibonachy.cpp" />
 		<Unit filename="src/files.cpp" />
 		<Unit filename="src/filesStruct.cpp" />

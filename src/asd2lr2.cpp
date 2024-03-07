@@ -23,6 +23,10 @@ int asd2Lr2Main()
     }
     cout << endl;
 */
+    char* bytes = "for";
+    int a;
+    memcpy(&a, bytes, sizeof a);
+    cout << "for to int: " << a << endl;
 
     TMem *mems = new TMem[COUNT_DATA];
     llong *keys = new llong[COUNT_DATA];
