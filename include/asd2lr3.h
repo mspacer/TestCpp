@@ -3,6 +3,15 @@
 
 using namespace std;
 
+//https://metanit.com/cpp/tutorial/5.14.php
+//https://www.youtube.com/watch?v=fqfkeJ09G0c&list=PLA0M1Bcd0w8x4jEp1r_aN3xlnlbfx9RQ2&index=25
+//https://www.youtube.com/watch?v=o1ZDXf7NGN4
+//https://www.youtube.com/watch?v=wArwjbpWFkw
+//https://codechick.io/tutorials/dsa/dsa-binary-tree
+//https://ru.wikipedia.org/wiki/%D0%94%D0%B2%D0%BE%D0%B8%D1%87%D0%BD%D0%B0%D1%8F_%D0%BA%D1%83%D1%87%D0%B0
+//https://neerc.ifmo.ru/wiki/index.php?title=%D0%94%D0%B2%D0%BE%D0%B8%D1%87%D0%BD%D0%B0%D1%8F_%D0%BA%D1%83%D1%87%D0%B0
+//https://neerc.ifmo.ru/wiki/index.php?title=%D0%A1%D0%BE%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0_%D0%BA%D1%83%D1%87%D0%B5%D0%B9
+
 typedef struct StudentAsd3 {
     int deadline;
     int interest;

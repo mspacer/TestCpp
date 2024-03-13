@@ -3,6 +3,9 @@
 
 #include <cstdlib>
 
+//https://codechick.io/tutorials/dsa/dsa-hash-table
+//https://www.youtube.com/watch?v=xhb-OEPkENA&list=PLA0M1Bcd0w8x4jEp1r_aN3xlnlbfx9RQ2&index=25
+
 using namespace std;
 typedef unsigned long long llong;
 
