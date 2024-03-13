@@ -39,7 +39,7 @@ int main()
     //asd2Lr1Main();
 
     //asd2Lr2Main();
-    testHashTable();
+    //testHashTable();
 
     //inputExampleMain();
     //inputExampleZero();
@@ -55,7 +55,8 @@ int main()
 
     //mainLab12();
 
-    //asd2Lr3Main();
+    asd2Lr3Main();
+    //testPriorityQueue();
 
     return 0;
 }
