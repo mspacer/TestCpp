@@ -19,6 +19,7 @@
 #include <asd2lr3.h>
 #include <lab11.h>
 #include<lab12.h>
+#include <lab13.h>
 
 using namespace std;
 
@@ -26,6 +27,8 @@ int main()
 {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
+    //setlocale(LC_ALL, "ru");
+
     //sum(3, 6);
 
     //fibonachyMain();
@@ -55,8 +58,10 @@ int main()
 
     //mainLab12();
 
-    asd2Lr3Main();
+    //asd2Lr3Main();
     //testPriorityQueue();
+
+    mainLab13();
 
     return 0;
 }

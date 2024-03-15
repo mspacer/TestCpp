@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
 118 <<<<<<< HEAD
 
-1710324825 source:d:\projects_c\testcpp\main.cpp
+1710505497 source:d:\projects_c\testcpp\main.cpp
 	<iostream>
 	<stdio.h>
 	<string>
@@ -21,6 +21,7 @@
 	<asd2lr3.h>
 	<lab11.h>
 	<lab12.h>
+	<lab13.h>
 
 1707942108 s/remotes/origin/master
 	<iostream>
@@ -76,7 +77,7 @@
 	<stdlib.h>
 	<pointertest.h>
 
-1709557928 d:\projects_c\testcpp\include\pointertest.h
+1710332988 d:\projects_c\testcpp\include\pointertest.h
 
 1707679185 source:d:\projects_c\testcpp\src\queueexample.cpp
 	<iostream>
@@ -146,7 +147,7 @@
 	<fstream>
 	<files.h>
 
-1709557928 d:\projects_c\testcpp\include\stringexample.h
+1710333291 d:\projects_c\testcpp\include\stringexample.h
 
 1709557929 source:d:\projects_c\testcpp\src\stringexample.cpp
 	<iostream>
@@ -192,9 +193,9 @@
 	<fstream>
 	<lab12.h>
 
-1710330559 d:\projects_c\testcpp\include\asd2lr3.h
+1710354863 d:\projects_c\testcpp\include\asd2lr3.h
 
-1710326864 source:d:\projects_c\testcpp\src\asd2lr3.cpp
+1710334143 source:d:\projects_c\testcpp\src\asd2lr3.cpp
 	<iostream>
 	<stdio.h>
 	<string>
@@ -202,5 +203,19 @@
 	<cstdlib>
 	<queue>
 	<ctime>
-	<asd2lr3.h>
+	"asd2lr3.h"
+
+1710506818 d:\projects_c\testcpp\include\lab13.h
+
+1710506059 source:d:\projects_c\testcpp\src\lab13.cpp
+	<iostream>
+	<stdio.h>
+	<string>
+	<math.h>
+	<cstdlib>
+	<unordered_map>
+	<ctime>
+	<algorithm>
+	<conio.h>
+	<lab13.h>
 
