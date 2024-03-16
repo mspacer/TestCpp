@@ -113,13 +113,13 @@ llong generateRandLong1() {
 //---------------------HashTable-----------------------------------------------------------------------------------------------------
 // знаходnження хеш-функції від ключа
 int HashTable::hash(llong key) {
-    int a = 7;
-    int b = 777;
+    int a = 1;
+    int b = 7;
     llong p = 9149658775000477;
 
     int i = ((a * key + b) % p) % M_BUCKETS;
     return i;
-    // return key % M_BUCKETS;
+     //return key % M_BUCKETS;
 }
 
 // додавання значення під відповідним ключем (заміна у випадку існування ключа)
@@ -136,7 +136,7 @@ bool HashTable::insert(llong key, TMem *value) {
 
     if (bucketsArray[i].size == 0 || mem == nullptr) {
         HashNode* node = new HashNode(key, value);
-        bucketsArray[i].push_back(node);
+        bucketsArray[i].push_front(node);
         count++;
         insertedCount++;
     } else {
@@ -217,6 +217,7 @@ void HashTable::checkLoadFactor() {
         capacity = capacity*2;
         cout << "capacity: " << capacity << endl;
         bucketsArray = (HLinkedList*) realloc(bucketsArray, capacity*sizeof(HLinkedList));
+        //bucketsArrayTmp = (HLinkedList*) malloc(bucketsArray, capacity*sizeof(HLinkedList));
     }
 }
 
@@ -239,6 +240,22 @@ void HashTable::print() {
 }
 
 //----------------------LinkedList----------------------------------------------------------------------------------------------------
+int HLinkedList::push_front(HashNode *hashNode) {
+    //додавання елементу в початок
+    HNode* firstNode = new HNode();
+    firstNode->hashNode = hashNode;
+
+    if (node != NULL) {
+        firstNode->next = node;
+        node = firstNode;
+    } else {
+        node = firstNode;
+    }
+
+    size++;
+    return 1;
+}
+//-----------------------------------------------------------------------------------------------------------------------------------
 int HLinkedList::push_back(HashNode *hashNode){
     //додавання елементу в кінець
     HNode* newNode = new HNode();
@@ -403,7 +420,7 @@ bool testHashTable() {
     clock_t myStart = clock();
     cout << "do insert" << endl;
     for (int i = 0; i < iters; i++) {
-        hashTable.insert(keysToInsert[i], mem);
+        hashTable.insert(keysToInsert[i], new TMem());
     }
     int myInsertSize = hashTable.size();
     //hashTable.print();
@@ -429,7 +446,7 @@ bool testHashTable() {
     clock_t stlStart = clock();
 
     for (int i = 0; i < iters; i++) {
-        unorderedMap.insert({keysToInsert[i], mem});
+        unorderedMap.insert({keysToInsert[i], new TMem()});
     }
     int stlInsertSize = unorderedMap.size();
 

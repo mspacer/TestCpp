@@ -65,6 +65,7 @@ struct HLinkedList {
         node = NULL;
     }
 
+    int push_front(HashNode *hashNode);
     int push_back(HashNode *hashNode); //додавання елементу в кінець
     HashNode* get(int n); //зчитування n-го елементу
     int sizeList(); //знаходження кількості елементів
@@ -72,7 +73,7 @@ struct HLinkedList {
     bool remove(llong key);
 };
 
-const int M_BUCKETS = 1000;
+const int M_BUCKETS = 6400;
 
 struct HashTable {
     HLinkedList *bucketsArray;

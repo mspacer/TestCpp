@@ -36,7 +36,7 @@ int main()
     //asd2Lr1Main();
 
     //asd2Lr2Main();
-    //testHashTable();
+    testHashTable();
 
     //inputExampleMain();
     //inputExampleZero();
@@ -47,7 +47,7 @@ int main()
     //mainLab11();
 
     //mainFiles();
-    mainFileStruct();
+   // mainFileStruct();
 
     return 0;
 }
