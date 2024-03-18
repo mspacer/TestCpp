@@ -23,6 +23,10 @@ int asd2Lr2Main()
     }
     cout << endl;
 */
+    char* bytes = "for";
+    int a;
+    memcpy(&a, bytes, sizeof a);
+    cout << "for to int: " << a << endl;
 
     TMem *mems = new TMem[COUNT_DATA];
     llong *keys = new llong[COUNT_DATA];
@@ -114,7 +118,11 @@ llong generateRandLong1() {
 // çíàõîänæåííÿ õåø-ôóíêö³¿ â³ä êëş÷à
 int HashTable::hash(llong key) {
     int a = 1;
-    int b = 7;
+
+
+
+    int b = 3;
+
     llong p = 9149658775000477;
 
     int i = ((a * key + b) % p) % M_BUCKETS;
@@ -148,7 +156,7 @@ bool HashTable::insert(llong key, TMem *value) {
             replacedCount++;
     }
 
-    checkLoadFactor();
+    //checkLoadFactor();
     return 1;
 }
 

@@ -1,6 +1,8 @@
 #ifndef POINTERTEST_H_INCLUDED
 #define POINTERTEST_H_INCLUDED
 
+// Динамический массив https://www.youtube.com/watch?v=fzNksn5wPTg
+
 int pointerMain();
 void changeVar(int* pVar, int value);
 void inintArray(int arr[], int arrSize);

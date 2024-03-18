@@ -1,0 +1,6 @@
+#ifndef STRINGTEST_H_INCLUDED
+#define STRINGTEST_H_INCLUDED
+
+int stringTestMain();
+
+#endif // STRINGTEST_H_INCLUDED

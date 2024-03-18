@@ -3,13 +3,12 @@
 #include <string>
 #include <math.h>
 #include <windows.h>
+
 #include <inputexample.h>
 
 using namespace std;
 
 int inputExampleMain() {
-    SetConsoleCP(1251);
-    SetConsoleOutputCP(1251);
 
     int n;
     cout << "Введите кол-во символов:" << endl;
@@ -24,6 +23,7 @@ int inputExampleMain() {
     gets(p);
     while(p[i++]);
     printf("Довжина введеного рядка = %i\n", i - 1);
+    cout << "strlen(temp): " << strlen(p) << endl;
 
     for (int i=0; *(p+i)!='\0'; i++){
         printf("%c", p[i]);
@@ -32,13 +32,17 @@ int inputExampleMain() {
 
     if (i < n) n = i - 1;
 
-    char charArr[n];
-
+    char charArr[n + 1];
+    charArr[n] = '\0';
     for (int i = 0; i < n; i++) {
         charArr[i] = p[i];
     }
-    char *s = (char*) malloc(n);
+    cout << "strlen(charArr): " << strlen(charArr) << endl;
+
+    char *s = (char*) malloc(n + 1);
+    s[n] = '\0';
     for (int j = 0; j < n ; j++) *(s+j) = *(p+j);
+    cout << "strlen(s): " << strlen(s) << endl;
 
     for (int i = 0; i < n; i++) {
         //printf("%c", charArr[i]);
@@ -48,11 +52,13 @@ int inputExampleMain() {
 
     char *ch = strrchr(p, 'a');
     //printf("%c\n", *ch);
-    cout << "*ch " << &ch << " " << *ch << endl;
-    for (int i=0; *(ch + i) != '\0'; i++){
-        cout << ch[i];
+    if (ch != nullptr) {
+        cout << "*ch " << &ch << " " << *ch << endl;
+        for (int i=0; *(ch + i) != '\0'; i++){
+            cout << ch[i];
+        }
+        cout << endl;
     }
-    cout << endl;
 
     //char ch2[] = {'1', '2', '3', '4', '5'};
     char *ch2 = "67567567";

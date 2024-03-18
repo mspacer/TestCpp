@@ -36,26 +36,34 @@
 		</Compiler>
 		<Unit filename="include/asd2lr1.h" />
 		<Unit filename="include/asd2lr2.h" />
+		<Unit filename="include/asd2lr3.h" />
 		<Unit filename="include/fibonachy.h" />
 		<Unit filename="include/files.h" />
 		<Unit filename="include/filesStruct.h" />
 		<Unit filename="include/inputexample.h" />
 		<Unit filename="include/lab11.h" />
+		<Unit filename="include/lab12.h" />
+		<Unit filename="include/lab13.h" />
 		<Unit filename="include/pointertest.h" />
 		<Unit filename="include/queueexample.h" />
 		<Unit filename="include/stringExample.h" />
+		<Unit filename="include/stringTest.h" />
 		<Unit filename="include/structexample.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/asd2lr1.cpp" />
 		<Unit filename="src/asd2lr2.cpp" />
+		<Unit filename="src/asd2lr3.cpp" />
 		<Unit filename="src/fibonachy.cpp" />
 		<Unit filename="src/files.cpp" />
 		<Unit filename="src/filesStruct.cpp" />
 		<Unit filename="src/inputexample.cpp" />
 		<Unit filename="src/lab11.cpp" />
+		<Unit filename="src/lab12.cpp" />
+		<Unit filename="src/lab13.cpp" />
 		<Unit filename="src/pointertest.cpp" />
 		<Unit filename="src/queueexample.cpp" />
 		<Unit filename="src/stringExample.cpp" />
+		<Unit filename="src/stringTest.cpp" />
 		<Unit filename="src/structexample.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

@@ -3,6 +3,9 @@
 
 #include <cstdlib>
 
+//https://codechick.io/tutorials/dsa/dsa-hash-table
+//https://www.youtube.com/watch?v=xhb-OEPkENA&list=PLA0M1Bcd0w8x4jEp1r_aN3xlnlbfx9RQ2&index=25
+
 using namespace std;
 typedef unsigned long long llong;
 
@@ -73,7 +76,11 @@ struct HLinkedList {
     bool remove(llong key);
 };
 
-const int M_BUCKETS = 6400;
+
+
+
+const int M_BUCKETS = 10000;
+
 
 struct HashTable {
     HLinkedList *bucketsArray;
