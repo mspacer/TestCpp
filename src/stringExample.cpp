@@ -17,6 +17,11 @@ int mainStringExample() {
     strcatBegin2(str, str2);
     cout << "str: " << str << endl;
 
+    int length = strlen(str);
+    char *ptr = strchr(str, '\n');
+    if (strchr(str, '\n') != nullptr)
+        length--;
+
     delete newStr;
     return 0;
 }

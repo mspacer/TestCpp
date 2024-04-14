@@ -175,7 +175,7 @@ int TPriorityQueue::pop() {
     //TStudentAsd3* student = (students + (count - 1));
     //delete student;
     siftDown(0);
-
+    //siftDown(0);
     count--;
     return 0;
 }

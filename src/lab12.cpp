@@ -75,7 +75,7 @@ void menuLab12() {
           break;
           }
       case 7:  {
-          editProduct();
+          editProduct2();
           break;
           }
       case 8:  {
@@ -375,6 +375,71 @@ int editProduct() {
         f.close();
     }
 
+    getch(); //чекати натискання клавіші
+    return 0;
+}
+
+int editProduct2() {
+    TProduct product;
+    cout << "sizeof(product): " << sizeof(product) << endl;
+
+    if (!(fpLab12 = fopen(fileNameLab12, "rb"))) {
+        cerr << "File do not exist!";
+        return -1;
+    }
+
+    cout << "modify product name:" << endl;
+    char productName[20];
+    fflush(stdin);
+    gets(productName);
+
+    TProduct prd;
+    fread(&prd, sizeof(TProduct), 1, fpLab12);
+    fpos_t pos;
+    long long curPos;
+    while (!feof(fpLab12)) {  //виведення даних з файлу
+      if (strcmp(productName, prd.name) == 0) {
+         curPos = ftell(fpLab12);
+         cout << "editProduct: " << curPos <<  endl;
+         int rez = fgetpos(fpLab12, &pos);
+         cout << "editProduct-1: " << rez << " " << pos << endl;
+
+         /*for(int i = 0; i < strlen(prd.name); i++) {
+            product.name[i] = prd.name[i];
+         }*/
+         memccpy (product.name, prd.name, '\0', Length_Name);
+         product.cost = prd.cost;
+         product.daysOfDelivery = prd.daysOfDelivery;
+         product.firm = prd.firm;
+        //break;
+      }
+
+      fread(&prd, sizeof(TProduct), 1, fpLab12);
+    }
+
+    //curPos = ftell(fpLab12);
+    //cout << "editProduct-2: " << curPos <<  endl;
+
+    fclose(fpLab12);
+
+    product.print();
+
+    char name[Length_Name] = "pr6_f1";
+    memccpy (product.name, name, '\0', Length_Name);
+    product.cost = 7;
+    product.daysOfDelivery = 8;
+
+    fpLab12 = fopen(fileNameLab12, "r+b");
+    //int rez = fseek(fpLab12, curPos, SEEK_SET);
+    //cout << "rez: " << rez << pos << endl;
+
+     if (fseek (fpLab12, curPos - sizeof(TProduct), SEEK_SET)==0) {
+        cout  << "установлено" << endl;
+        fwrite(&product, sizeof(TProduct), 1, fpLab12); //запис предмету до файлу
+        //fwrite(&product, 0, 1, fpLab12); //запис предмету до файлу
+     }
+
+    fclose(fpLab12);
     getch(); //чекати натискання клавіші
     return 0;
 }
