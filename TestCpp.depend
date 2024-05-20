@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
 118 <<<<<<< HEAD
 
-1712513952 source:d:\projects_c\testcpp\main.cpp
+1716227339 source:d:\projects_c\testcpp\main.cpp
 	<iostream>
 	<windows.h>
 	<structexample.h>
@@ -16,6 +16,7 @@
 	<asd2lr1.h>
 	<asd2lr2.h>
 	<asd2lr3.h>
+	"asd2lr4.h"
 	<lab11.h>
 	<lab12.h>
 	<lab13.h>
@@ -208,4 +209,18 @@
 	<conio.h>
 	<stdarg.h>
 	<lab13.h>
+
+1716232219 source:d:\projects_c\testcpp\src\asd2lr4.cpp
+	<iostream>
+	<set>
+	<vector>
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<cmath>
+	"asd2lr2.h"
+	"asd2lr4.h"
+
+1716233334 d:\projects_c\testcpp\include\asd2lr4.h
+	<string>
 

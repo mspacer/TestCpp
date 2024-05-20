@@ -14,6 +14,7 @@
 #include <asd2lr1.h>
 #include <asd2lr2.h>
 #include <asd2lr3.h>
+#include "asd2lr4.h"
 #include <lab11.h>
 #include<lab12.h>
 #include <lab13.h>
@@ -56,13 +57,15 @@ int main()
 
     //mainFileStruct();
 
-    mainLab12();
+    //mainLab12();
 
     //asd2Lr3Main();
    // testPriorityQueue();
 
     //mainLab13();
 
+    asd2Lr4Main();
+    testBinarySearchTree();
 
     return 0;
 }
