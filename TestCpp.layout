@@ -2,9 +2,34 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="include\asd2lr3.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\stringTest.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3494" topLine="77" />
+			<Cursor1 position="0" topLine="12" />
+		</Cursor>
+	</File>
+	<File name="include\queueexample.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="97" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\asd2lr2.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="431" topLine="94" />
+		</Cursor>
+	</File>
+	<File name="src\filesStruct.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2352" topLine="62" />
+		</Cursor>
+	</File>
+	<File name="src\inputexample.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3641" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\asd2lr1.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="744" topLine="2" />
 		</Cursor>
 	</File>
 	<File name="src\asd2lr3.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -12,15 +37,63 @@
 			<Cursor1 position="2022" topLine="73" />
 		</Cursor>
 	</File>
-	<File name="src\pointertest.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\stringExample.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3044" topLine="98" />
+			<Cursor1 position="411" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="include\queueexample.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="97" topLine="0" />
+			<Cursor1 position="1085" topLine="32" />
 		</Cursor>
+	</File>
+	<File name="src\pointertest.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2958" topLine="97" />
+		</Cursor>
+	</File>
+	<File name="include\structexample.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="393" topLine="7" />
+		</Cursor>
+	</File>
+	<File name="src\structexample.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2757" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\lab11.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3492" topLine="13" />
+		</Cursor>
+	</File>
+	<File name="src\fibonachy.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="90" topLine="3" />
+		</Cursor>
+	</File>
+	<File name="include\pointertest.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="456" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\asd2lr4.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="8082" topLine="131" />
+		</Cursor>
+	</File>
+	<File name="include\lab11.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="164" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\lab12.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="11236" topLine="396" />
+		</Cursor>
+		<Folding>
+			<Collapse line="325" />
+		</Folding>
 	</File>
 	<File name="include\files.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
@@ -32,54 +105,9 @@
 			<Cursor1 position="3078" topLine="144" />
 		</Cursor>
 	</File>
-	<File name="src\stringExample.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\asd2lr1.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="411" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\structexample.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2757" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1106" topLine="34" />
-		</Cursor>
-	</File>
-	<File name="src\lab11.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3492" topLine="13" />
-		</Cursor>
-	</File>
-	<File name="include\lab12.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="441" topLine="1" />
-		</Cursor>
-	</File>
-	<File name="include\asd2lr2.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="431" topLine="94" />
-		</Cursor>
-	</File>
-	<File name="src\asd2lr2.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2562" topLine="78" />
-		</Cursor>
-	</File>
-	<File name="include\pointertest.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="456" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\asd2lr4.h" open="1" top="1" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1538" topLine="72" />
-		</Cursor>
-	</File>
-	<File name="src\fibonachy.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="90" topLine="3" />
+			<Cursor1 position="6122" topLine="186" />
 		</Cursor>
 	</File>
 	<File name="src\queueexample.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -87,57 +115,29 @@
 			<Cursor1 position="2773" topLine="0" />
 		</Cursor>
 	</File>
+	<File name="include\lab12.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="441" topLine="1" />
+		</Cursor>
+	</File>
 	<File name="include\filesStruct.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="801" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\filesStruct.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\asd2lr3.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2352" topLine="62" />
+			<Cursor1 position="3494" topLine="59" />
 		</Cursor>
 	</File>
-	<File name="src\stringTest.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\asd2lr4.cpp" open="1" top="1" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="12" />
+			<Cursor1 position="7337" topLine="188" />
 		</Cursor>
 	</File>
-	<File name="include\structexample.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\asd2lr2.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="393" topLine="7" />
+			<Cursor1 position="2562" topLine="63" />
 		</Cursor>
-	</File>
-	<File name="src\inputexample.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3641" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\lab11.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="164" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\asd2lr1.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="744" topLine="2" />
-		</Cursor>
-	</File>
-	<File name="src\asd2lr4.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="5140" topLine="137" />
-		</Cursor>
-	</File>
-	<File name="src\asd2lr1.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="6122" topLine="186" />
-		</Cursor>
-	</File>
-	<File name="src\lab12.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="11236" topLine="396" />
-		</Cursor>
-		<Folding>
-			<Collapse line="325" />
-		</Folding>
 	</File>
 </CodeBlocks_layout_file>
