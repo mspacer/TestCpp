@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
 118 <<<<<<< HEAD
 
-1716365154 source:d:\projects_c\testcpp\main.cpp
+1716574861 source:d:\projects_c\testcpp\main.cpp
 	<iostream>
 	<windows.h>
 	<structexample.h>
@@ -54,49 +54,49 @@
 
 1707925958 D
 
-1708357679 source:d:\projects_c\testcpp\src\structexample.cpp
+1708860538 source:d:\projects_c\testcpp\src\structexample.cpp
 	<iostream>
 	<structexample.h>
 
-1707817895 d:\projects_c\testcpp\include\structexample.h
+1707929566 d:\projects_c\testcpp\include\structexample.h
 
-1707682785 d:\projects_c\testcpp\include\fibonachy.h
+1707929559 d:\projects_c\testcpp\include\fibonachy.h
 
-1707682783 source:d:\projects_c\testcpp\src\fibonachy.cpp
+1707929557 source:d:\projects_c\testcpp\src\fibonachy.cpp
 	<iostream>
 	<stdio.h>
 	<string>
 	<math.h>
 	<fibonachy.h>
 
-1709561528 source:d:\projects_c\testcpp\src\pointertest.cpp
+1709140101 source:d:\projects_c\testcpp\src\pointertest.cpp
 	<iostream>
 	<stdio.h>
 	<stdlib.h>
 	<pointertest.h>
 
-1710336588 d:\projects_c\testcpp\include\pointertest.h
+1710618303 d:\projects_c\testcpp\include\pointertest.h
 
-1707682785 source:d:\projects_c\testcpp\src\queueexample.cpp
+1707929558 source:d:\projects_c\testcpp\src\queueexample.cpp
 	<iostream>
 	<stdio.h>
 	<stdlib.h>
 	<queueexample.h>
 
-1707682786 d:\projects_c\testcpp\include\queueexample.h
+1707929566 d:\projects_c\testcpp\include\queueexample.h
 
-1707824135 d:\projects_c\testcpp\include\asd2lr1.h
+1707929559 d:\projects_c\testcpp\include\asd2lr1.h
 
-1708357679 source:d:\projects_c\testcpp\src\asd2lr1.cpp
+1707945708 source:d:\projects_c\testcpp\src\asd2lr1.cpp
 	<iostream>
 	<stdio.h>
 	<string>
 	<math.h>
 	<asd2lr1.h>
 
-1708357533 d:\projects_c\testcpp\include\inputexample.h
+1708202218 d:\projects_c\testcpp\include\inputexample.h
 
-1708372720 source:d:\projects_c\testcpp\src\inputexample.cpp
+1710618303 source:d:\projects_c\testcpp\src\inputexample.cpp
 	<iostream>
 	<stdio.h>
 	<string>
@@ -104,7 +104,7 @@
 	<windows.h>
 	<inputexample.h>
 
-1716274188 source:d:\projects_c\testcpp\src\asd2lr2.cpp
+1710788700 source:d:\projects_c\testcpp\src\asd2lr2.cpp
 	<iostream>
 	<stdio.h>
 	<string>
@@ -115,12 +115,12 @@
 	<ctime>
 	<algorithm>
 
-1716274188 d:\projects_c\testcpp\include\asd2lr2.h
+1710788571 d:\projects_c\testcpp\include\asd2lr2.h
 	<cstdlib>
 
-1709561528 d:\projects_c\testcpp\include\lab11.h
+1709402615 d:\projects_c\testcpp\include\lab11.h
 
-1709561528 source:d:\projects_c\testcpp\src\lab11.cpp
+1712513917 source:d:\projects_c\testcpp\src\lab11.cpp
 	<iostream>
 	<stdio.h>
 	<string>
@@ -132,10 +132,10 @@
 	<lab11.h>
 	<stringExample.h>
 
-1709561528 d:\projects_c\testcpp\include\files.h
+1709302811 d:\projects_c\testcpp\include\files.h
 	<string.h>
 
-1709561528 source:d:\projects_c\testcpp\src\files.cpp
+1709461931 source:d:\projects_c\testcpp\src\files.cpp
 	<iostream>
 	<stdio.h>
 	<string>
@@ -145,16 +145,16 @@
 	<fstream>
 	<files.h>
 
-1710336891 d:\projects_c\testcpp\include\stringexample.h
+1710618303 d:\projects_c\testcpp\include\stringexample.h
 
-1716274188 source:d:\projects_c\testcpp\src\stringexample.cpp
+1712513917 source:d:\projects_c\testcpp\src\stringexample.cpp
 	<iostream>
 	<stdio.h>
 	<string>
 	<string.h>
 	<stringExample.h>
 
-1709561528 source:d:\projects_c\testcpp\src\filesstruct.cpp
+1709499155 source:d:\projects_c\testcpp\src\filesstruct.cpp
 	<iostream>
 	<conio.h>
 	<stdlib.h>
@@ -163,7 +163,7 @@
 	<iomanip>
 	<filesStruct.h>
 
-1708372257 source:d:\projects_c\testcpp\src\stringtest.cpp
+1710618303 source:d:\projects_c\testcpp\src\stringtest.cpp
 	<iostream>
 	<stdio.h>
 	<string>
@@ -171,14 +171,14 @@
 	<windows.h>
 	<stringTest.h>
 
-1708369032 d:\projects_c\testcpp\include\stringtest.h
+1710618303 d:\projects_c\testcpp\include\stringtest.h
 
-1709561528 d:\projects_c\testcpp\include\filesstruct.h
+1709494821 d:\projects_c\testcpp\include\filesstruct.h
 
-1716274188 d:\projects_c\testcpp\include\lab12.h
+1713089863 d:\projects_c\testcpp\include\lab12.h
 	<iomanip>
 
-1716274188 source:d:\projects_c\testcpp\src\lab12.cpp
+1713091549 source:d:\projects_c\testcpp\src\lab12.cpp
 	<iostream>
 	<conio.h>
 	<errno.h>
@@ -189,9 +189,9 @@
 	<fstream>
 	<lab12.h>
 
-1710358463 d:\projects_c\testcpp\include\asd2lr3.h
+1710618303 d:\projects_c\testcpp\include\asd2lr3.h
 
-1716274188 source:d:\projects_c\testcpp\src\asd2lr3.cpp
+1712354385 source:d:\projects_c\testcpp\src\asd2lr3.cpp
 	<iostream>
 	<stdio.h>
 	<string>
@@ -201,16 +201,16 @@
 	<ctime>
 	"asd2lr3.h"
 
-1710510418 d:\projects_c\testcpp\include\lab13.h
+1710618303 d:\projects_c\testcpp\include\lab13.h
 
-1710519634 source:d:\projects_c\testcpp\src\lab13.cpp
+1710618303 source:d:\projects_c\testcpp\src\lab13.cpp
 	<iostream>
 	<stdio.h>
 	<conio.h>
 	<stdarg.h>
 	<lab13.h>
 
-1716367232 source:d:\projects_c\testcpp\src\asd2lr4.cpp
+1716574964 source:d:\projects_c\testcpp\src\asd2lr4.cpp
 	<iostream>
 	<set>
 	<vector>
@@ -221,7 +221,7 @@
 	"asd2lr2.h"
 	"asd2lr4.h"
 
-1716367652 d:\projects_c\testcpp\include\asd2lr4.h
+1716575351 d:\projects_c\testcpp\include\asd2lr4.h
 	<string>
 	<vector>
 

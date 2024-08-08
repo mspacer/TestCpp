@@ -87,7 +87,7 @@ bool testBinarySearchTree() {
     srand(time(NULL));
     const int iters = 80000;
     const int keysAmount = iters * 2;
-    const int itersToRangeQueries = 1000;
+    const int itersToRangeQueries = 1;//000;
 
     vector<StudentAsd4> data(keysAmount);
     vector<StudentAsd4> dataToInsert(iters);

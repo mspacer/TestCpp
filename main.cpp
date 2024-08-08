@@ -64,8 +64,8 @@ int main()
 
     //mainLab13();
 
-    //asd2Lr4Main();
-    testBinarySearchTree();
+    asd2Lr4Main();
+    //testBinarySearchTree();
 
     return 0;
 }
